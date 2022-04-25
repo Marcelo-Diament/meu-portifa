@@ -12,7 +12,7 @@
 
 * {
   background-color: rgba(255,0,0,.05);
-  /* border: 1px solid red; */
+  border: 1px solid red;
   box-sizing: border-box;
   font-size: var(--tamanho-fonte-md);
   margin: 0;
