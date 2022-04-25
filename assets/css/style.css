@@ -177,3 +177,43 @@ caption {
 svg {
   fill: var(--color-primary);
 }
+
+/* Estilo aplicado por classes (agrupamento genérico) */
+
+/* flexBox customizada */
+.flex-container {
+  align-items: stretch;
+  display: flex;
+  padding: 0;
+}
+
+.flex-container.flex-container--col {
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.flex-container.flex-container--row {
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.flex-container>h2,
+.flex-container:not(section)>h3 {
+  flex: 1 1 auto;
+  margin: var(--spacing-size-double) var(--spacing-size-default) var(--spacing-size-quarter);
+}
+
+section.flex-container>h3 {
+  flex: 1 1 auto;
+  margin: var(--spacing-size-half) 0;
+}
+
+.flex-container>h2+p,
+.flex-container>h3+p {
+  margin: 0 var(--spacing-size-default) var(--spacing-size-half);
+  flex: 1 1 auto;
+}
+
+section.flex-container.flex-container--row>h3 {
+  flex: 1 0 100%;
+}
