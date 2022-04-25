@@ -218,3 +218,36 @@ section.flex-container.flex-container--row>h3 {
   flex: 1 0 100%;
 }
 
+ul.flex-container.flex-container--row>li {
+  margin: var(--spacing-size-half) var(--spacing-size-default);
+}
+
+.flex-container.flex-container--row article {
+  margin: var(--spacing-size-default) 0;
+  flex: 1 1 auto;
+  max-width: calc(100vw - var(--spacing-size-half));
+}
+
+.flex-container.flex-container--row article div {
+  flex: 1 1 auto;
+  margin: var(--spacing-size-half) 0;
+  max-width: calc(100vw - var(--spacing-size-half));
+  min-height: 100%;
+  padding: 0;
+}
+
+
+
+
+.skills .skills__hard .skill .skill__img {
+  border-radius: var(--border-radius-default) var(--border-radius-default) 0 0;
+  height: 160px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.skills .skills__hard .skill .skill__img img {
+  height: auto;
+  width: 120%;
+}
