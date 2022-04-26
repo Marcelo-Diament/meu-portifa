@@ -236,6 +236,66 @@ ul.flex-container.flex-container--row>li {
   padding: 0;
 }
 
+/* container x tema*/
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-darker);
+}
+
+.primary>h1,
+.primary>h2,
+.primary>h3 {
+  color: var(--color-darker);
+}
+
+.primary>p,
+.primary>p small {
+  color: var(--color-darker);
+}
+
+.primary>small {
+  color: var(--color-dark);
+}
+
+.dark {
+  background-color: var(--color-dark);
+}
+
+.dark>h1,
+.dark>h2,
+.dark>h3 {
+  color: var(--color-primary);
+}
+
+.dark>p,
+.dark>p small {
+  color: var(--color-lighter);
+}
+
+.dark>small {
+  color: var(--color-light);
+}
+
+.darker {
+  background-color: var(--color-darker);
+}
+
+.darker>h1,
+.darker>h2,
+.darker>h3 {
+  color: var(--color-primary);
+}
+
+.darker>p,
+.darker>p small {
+  color: var(--color-lighter);
+}
+
+.darker>small {
+  color: var(--color-light);
+}
+
+
 
 
 
