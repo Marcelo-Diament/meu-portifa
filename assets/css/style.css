@@ -295,6 +295,51 @@ ul.flex-container.flex-container--row>li {
   color: var(--color-light);
 }
 
+/* header.menu */
+header.menu {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+header.menu .avatar {
+  background-color: var(--color-dark);
+  border: 8px solid var(--color-dark);
+  border-radius: var(--border-radius-circle);
+  display: block;
+  flex: 0 1 80px;
+  height: 80px;
+  /* margin: var(--spacing-size-quarter) var(--spacing-size-double) var(--spacing-size-default) 0; */
+  margin: var(--spacing-size-default);
+  overflow: hidden;
+  width: 80px;
+}
+
+header.menu .avatar .avatar__img {
+  display: block;
+  height: 72px;
+  margin: auto;
+  transition: all .6s ease-in-out;
+  width: 72px;
+}
+
+header.menu .avatar:hover .avatar__img {
+  height: 80px;
+  width: 80px;
+}
+
+header.menu .description__bio {
+  line-height: var(--line-height-lg);
+}
+
+header.menu .description__links {
+  margin-top: var(--spacing-size-half);
+}
+
+header.menu .description__links a {
+  padding: var(--spacing-size-half);
+}
 
 
 
