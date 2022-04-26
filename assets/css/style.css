@@ -341,8 +341,27 @@ header.menu .description__links a {
   padding: var(--spacing-size-half);
 }
 
+/* .skills */
+.skills {
+  background-color: var(--color-dark);
+}
 
+.skills .skills__hard,
+.skills .skills__soft {
+  padding: var(--spacing-size-default);
+}
 
+.skills .skills__hard .skill,
+.skills .skills__soft .skill {
+  flex: 1 1 50%;
+}
+
+.skills .skills__hard .skill .skill__container,
+.skills .skills__soft .skill .skill__container {
+  background-color: var(--color-darker);
+  border: 1px solid var(--color-lighter);
+  border-radius: var(--border-radius-default);
+}
 
 .skills .skills__hard .skill .skill__img {
   border-radius: var(--border-radius-default) var(--border-radius-default) 0 0;
