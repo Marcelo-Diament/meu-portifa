@@ -453,3 +453,61 @@ header.menu .description__links a {
   padding: var(--spacing-size-half) var(--spacing-size-default);
   font-family: var(--font-family-title);
 }
+
+.xp {
+  padding: var(--spacing-size-default) !important;
+  width: -webkit-fill-available;
+}
+
+.xp>h2 {
+  margin: 0;
+}
+
+@media only screen and (min-width: 480px) {
+  :root {
+    --color-primary: #f00;
+    --color-secondary: rgb(255 0 0 / 50%);
+  }
+
+  .flex-container.flex-container--row article {
+    flex: 1 1 0;
+    margin: var(--spacing-size-default) 0;
+    min-width: 50%;
+  }
+
+  .flex-container.flex-container--row article:nth-child(even) div {
+    margin: 0 var(--spacing-size-half) 0 0;
+  }
+
+  .flex-container.flex-container--row article:nth-child(odd) div {
+    margin: 0 0 0 var(--spacing-size-half);
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --color-primary: #0f0;
+    --color-secondary: rgb(0 255 0 / 50%);
+  }
+}
+
+@media print {
+
+  *,
+  html,
+  body,
+  p,
+  article,
+  section,
+  header,
+  footer,
+  nav {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
+  img {
+    filter: grayscale(1) !important;
+  }
+}
