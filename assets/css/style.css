@@ -375,3 +375,81 @@ header.menu .description__links a {
   height: auto;
   width: 120%;
 }
+
+.skills .skills__hard .skill .skill__text,
+.skills .skills__soft .skill .skill__text {
+  padding: var(--spacing-size-half) var(--spacing-size-default);
+}
+
+.skills .skills__hard .skill .skill__text .skill__description,
+.skills .skills__soft .skill .skill__text .skill__description {
+  margin-top: var(--spacing-size-third);
+  min-height: 100px;
+}
+
+.skills .skills__cta {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: var(--spacing-size-double) var(--spacing-size-default);
+}
+
+.skills .skills__cta .cta__title {
+  flex: 1 0 100%;
+  font-size: var(--font-size-xxl);
+  text-align: center;
+}
+
+.skills .skills__cta .cta__description {
+  flex: 1 0 100%;
+  font-size: var(--font-size-lg);
+  text-align: center;
+}
+
+.skills .skills__cta .cta__form {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: var(--font-size-lg);
+  padding: var(--spacing-size-default);
+}
+
+.skills .skills__cta .cta__form .input-group {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: var(--spacing-size-half);
+  margin-bottom: var(--spacing-size-default);
+}
+
+.skills .skills__cta .cta__form .input-group label {
+  color: var(--color-darker);
+  flex: 0 1 120px;
+  font-size: var(--font-size-lg);
+  text-align: left;
+  margin-right: var(--spacing-size-default);
+}
+
+.skills .skills__cta .cta__form .input-group input {
+  flex: 1 1 calc(100% - 120px);
+  font-size: var(--font-size-lg);
+}
+
+
+.skills .skills__cta .cta__form .submit-group {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: var(--spacing-size-default) 0 var(--spacing-size-default) auto;
+}
+
+.skills .skills__cta .cta__form .submit-group button {
+  background-color: var(--color-darker);
+  border: none;
+  border-radius: var(--border-radius-default);
+  color: var(--color-primary);
+  padding: var(--spacing-size-half) var(--spacing-size-default);
+  font-family: var(--font-family-title);
+}
