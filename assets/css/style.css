@@ -492,6 +492,23 @@ header.menu .description__links a {
   }
 }
 
+@media only screen and (min-width: 1366px) {
+
+  .skills .skills__hard .skill,
+  .skills .skills__soft .skill {
+    flex: 0 1 25%;
+  }
+
+  .flex-container.flex-container--row article {
+    min-width: 25%;
+  }
+
+  .flex-container.flex-container--row article:nth-child(even) div,
+  .flex-container.flex-container--row article:nth-child(odd) div {
+    margin: var(--spacing-size-half);
+  }
+}
+
 @media print {
 
   *,
