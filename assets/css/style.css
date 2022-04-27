@@ -353,7 +353,21 @@ header.menu .description__links a {
 
 .skills .skills__hard .skill,
 .skills .skills__soft .skill {
-  flex: 1 1 50%;
+  flex: 1 1 100%;
+}
+
+.skills .skills__hard .skill::after {
+  content: '</>';
+  background-color: var(--color-darker);
+  color: var(--color-primary);
+  position: absolute;
+  top: var(--spacing-size-default);
+  left: var(--spacing-size-default);
+  font-weight: bold;
+  padding: var(--spacing-size-half);
+  border-radius: var(--border-radius-circle);
+  border: 2px solid var(--color-primary);
+  font-size: var(--font-size-md);
 }
 
 .skills .skills__hard .skill .skill__container,
@@ -463,10 +477,22 @@ header.menu .description__links a {
   margin: 0;
 }
 
+::selection {
+  color: var(--color-darker);
+  background-color: var(--color-primary);
+}
+
+
+
 @media only screen and (min-width: 480px) {
   :root {
     --color-primary: #f00;
     --color-secondary: rgb(255 0 0 / 50%);
+  }
+
+  .skills .skills__hard .skill,
+  .skills .skills__soft .skill {
+    flex: 1 1 50%;
   }
 
   .flex-container.flex-container--row article {
@@ -493,6 +519,10 @@ header.menu .description__links a {
 }
 
 @media only screen and (min-width: 1366px) {
+  :root {
+    --color-primary: #f0f;
+    --color-secondary: rgb(255 0 255 / 50%);
+  }
 
   .skills .skills__hard .skill,
   .skills .skills__soft .skill {
