@@ -375,8 +375,8 @@ header.menu .description__links a {
   background-color: var(--color-darker);
   color: var(--color-primary);
   position: absolute;
-  top: var(--spacing-size-default);
-  left: var(--spacing-size-default);
+  top: var(--spacing-size-double);
+  left: var(--spacing-size-double);
   font-weight: bold;
   padding: var(--spacing-size-half);
   border-radius: var(--border-radius-circle);
