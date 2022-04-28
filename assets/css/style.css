@@ -316,6 +316,13 @@ header.menu {
 }
 
 header.menu .avatar {
+  animation-name: giroMortal;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-duration: 10s;
+  /* animation-iteration-count: 2; */
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   background-color: var(--color-dark);
   border: 8px solid var(--color-dark);
   border-radius: var(--border-radius-circle);
@@ -329,6 +336,10 @@ header.menu .avatar {
 }
 
 header.menu .avatar .avatar__img {
+  animation-name: espichar;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(-1, 0.53, 0.515, 0.955);
   display: block;
   height: 72px;
   margin: auto;
@@ -508,6 +519,33 @@ header.menu .description__links a {
   background-color: var(--color-primary);
 }
 
+@keyframes espichar {
+  from {
+    transform: scaleY(1);
+    filter: grayscale(1);
+  }
+  to {
+    transform: scaleY(2);
+    filter: grayscale(0);
+  }
+}
+
+@keyframes giroMortal {
+  0% {
+    border: 8px solid var(--color-dark);
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    border: 8px solid var(--color-secondary);
+    transform: rotateZ(1800deg);
+  }
+
+  100% {
+    border: 8px solid var(--color-primary);
+    transform: rotateZ(0deg);
+  }
+}
 
 
 @media only screen and (min-width: 480px) {
