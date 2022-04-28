@@ -488,6 +488,7 @@ header.menu .description__links a {
   border: none;
   border-radius: var(--border-radius-default);
   color: var(--color-primary);
+  cursor: pointer;
   padding: var(--spacing-size-half) var(--spacing-size-default);
   font-family: var(--font-family-title);
 }
