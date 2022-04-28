@@ -180,6 +180,17 @@ svg {
 
 /* Estilo aplicado por classes (agrupamento genérico) */
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  color: transparent;
+  background-color: transparent;
+  height: 0;
+  width: 0;
+  margin: 0 !important;
+  padding: 0;
+}
+
 /* flexBox customizada */
 .flex-container {
   align-items: stretch;
@@ -354,6 +365,8 @@ header.menu .description__links a {
 .skills .skills__hard .skill,
 .skills .skills__soft .skill {
   flex: 1 1 100%;
+  padding: var(--spacing-size-default);
+  position: relative;
 }
 
 .skills .skills__hard .skill::after {
@@ -393,6 +406,17 @@ header.menu .description__links a {
 .skills .skills__hard .skill .skill__text,
 .skills .skills__soft .skill .skill__text {
   padding: var(--spacing-size-half) var(--spacing-size-default);
+}
+
+.skills .skills__hard .skill .skill__text .skill__title {
+  position: relative;
+}
+
+.skills .skills__hard .skill .skill__text .skill__title::before {
+  content: attr(data-title);
+  color: var(--color-lighter);
+  position: relative;
+  left: -16px;
 }
 
 .skills .skills__hard .skill .skill__text .skill__description,
