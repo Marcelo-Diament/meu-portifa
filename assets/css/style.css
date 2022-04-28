@@ -519,6 +519,19 @@ header.menu .description__links a {
   background-color: var(--color-primary);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-lighter);
+}
+
 @keyframes espichar {
   from {
     transform: scaleY(1);
